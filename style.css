@@ -1,0 +1,165 @@
+/* Nollaa oletukset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f7f6; /* Vaalea tausta */
+  color: #333;
+  font-family: "Arial";
+  line-height: 1.6em;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Päälaatikko */
+#container {
+  background: #fff;
+  max-width: 700px; /* Kapeampi leveys */
+  margin: 0 auto; /* Keskittää sivun vaakasuunnassa */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Varjo */
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center; /* Keskittää kaiken tekstin oletuksena */
+}
+
+/* Yläpalkki */
+#header {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #fff;
+  padding: 25px;
+}
+
+#header h1 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+/* Navigaatio */
+#nav {
+  background: #34495e;
+  border-bottom: 4px solid #4ca1af;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox asettelu */
+  justify-content: center; /* Keskittää linkit keskelle */
+  list-style: none;
+}
+
+#nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: background 0.3s;
+}
+
+#nav a:hover {
+  background: #4ca1af;
+}
+
+#nav .active {
+  background: #2c3e50;
+  color: #c4f7f7;
+  font-weight: bold;
+}
+
+/* Sisältöalueet */
+#main,
+#sidebar {
+  padding: 20px;
+  width: 100%; /* Täyttää koko tilan */
+  float: none; /* Poistetaan floatit */
+}
+
+/* Kuvat */
+.logo {
+  max-width: 150px; /* Pienempi logo */
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Kurssit */
+.courses {
+  list-style: none;
+  padding: 0;
+  max-width: 400px; /* Rajoittaa listan leveyttä */
+  margin: 0 auto; /* Keskittää listan */
+}
+
+.courses li {
+  margin-bottom: 10px;
+  /* border-bottom: none; */
+  padding-bottom: 5px;
+}
+
+.courses li:hover {
+  background: #4ca1af;
+  color: #fff;
+}
+
+.courses a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Viesti-sivu */
+form {
+  max-width: 400px; /* Kapeampi lomake */
+  margin: 0 auto; /* Keskittää lomakkeen */
+  text-align: left; /* Pitää labelit vasemmalla  */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.star {
+  color: red;
+  font-weight: bold;
+}
+
+/* Aktiivinen tekstikenttä */
+input:focus,
+textarea:focus {
+  background: #c4f7f7;
+  border-color: #4ca1af; /* Reunus */
+  outline: none; /* Poistaa selaimen oletusreunuksen */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #4ca1af;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #3b8b99;
+}
+
+/* Footer */
+#footer {
+  background: #34495e;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}

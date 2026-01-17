@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ota yhteyttä</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Karelia AMK - Maiju Martikkala</h1>
+      </div>
+      <div id="nav">
+        <ul>
+          <li><a href="index.html">Koti</a></li>
+          <li><a href="courses.html">Opintojaksot</a></li>
+          <li><a class="active" href="contact.html">Ota yhteyttä</a></li>
+        </ul>
+      </div>
+      <div id="main">
+        <h1>Ota yhteyttä</h1>
+        <form onsubmit="sendMsg(event)">
+          <div>
+            <label>Nimi<span class="star">*</span></label
+            ><br />
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label>Sähköposti<span class="star">*</span></label
+            ><br />
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label>Viesti<span class="star">*</span></label
+            ><br />
+            <textarea id="msg" name="msg" required></textarea>
+          </div>
+          <button type="submit">Lähetä</button>
+        </form>
+      </div>
+
+      <script src="app.js"></script>
+
+      <div id="footer">
+        <p>Copyright &copy; 2026</p>
+      </div>
+    </div>
+  </body>
+</html>
